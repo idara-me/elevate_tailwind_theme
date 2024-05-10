@@ -772,10 +772,10 @@ function sidebar_item_container(item) {
                 });
 
                 let submenu_level_1 = `<li class="sidebar-item">
-                <a class="sidebar-link has-arrow" style="white-space: unset;" href="#" aria-expanded="${is_expanded}" data-bs-parent="#accordionmainmenu" data-bs-toggle="collapse" data-bs-target="#${m_menu.name}">
+                <a class="sidebar-link has-arrow" style="white-space: unset;" href="#" aria-expanded="${is_expanded}" data-bs-parent="#accordionmainmenu" data-bs-toggle="collapse" data-bs-target="#item${m_menu.name}">
                   <span class="hide-menu">${m_menu.label}</span>
                 </a>
-                <ul aria-expanded="false" class="collapse two-level ${submenu_level_1_active}" id="${m_menu.name}"> ${submenu_level_2} </ul></li>`
+                <ul aria-expanded="false" class="collapse two-level ${submenu_level_1_active}" id="item${m_menu.name}"> ${submenu_level_2} </ul></li>`
 
                 submenuitems += submenu_level_1
             });

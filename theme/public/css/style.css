@@ -30792,3 +30792,11 @@ table.dataTable.dtr-inline.collapsed.d-row>tbody>tr[role=row]>th:first-child::be
         padding: 15px 10px;
     }
 }
+
+.sidebar .menu-list>li ul {
+    padding-left: 30px;
+}
+
+.sidebar .menu-list>li ul.two-level {
+    padding-left: 10px;
+}
