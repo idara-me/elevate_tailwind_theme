@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Lama Sans';
+    src: url('LamaSans-Medium.eot');
+    src: url('LamaSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('LamaSans-Medium.woff2') format('woff2'),
+        url('LamaSans-Medium.woff') format('woff'),
+        url('LamaSans-Medium.ttf') format('truetype'),
+        url('LamaSans-Medium.svg#LamaSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lama Sans';
+    src: url('LamaSans-Light.eot');
+    src: url('LamaSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('LamaSans-Light.woff2') format('woff2'),
+        url('LamaSans-Light.woff') format('woff'),
+        url('LamaSans-Light.ttf') format('truetype'),
+        url('LamaSans-Light.svg#LamaSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lama Sans';
+    src: url('LamaSans-ExtraBold.eot');
+    src: url('LamaSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('LamaSans-ExtraBold.woff2') format('woff2'),
+        url('LamaSans-ExtraBold.woff') format('woff'),
+        url('LamaSans-ExtraBold.ttf') format('truetype'),
+        url('LamaSans-ExtraBold.svg#LamaSans-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lama Sans';
+    src: url('LamaSans-Regular.eot');
+    src: url('LamaSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LamaSans-Regular.woff2') format('woff2'),
+        url('LamaSans-Regular.woff') format('woff'),
+        url('LamaSans-Regular.ttf') format('truetype'),
+        url('LamaSans-Regular.svg#LamaSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lama Sans';
+    src: url('LamaSans-SemiBold.eot');
+    src: url('LamaSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('LamaSans-SemiBold.woff2') format('woff2'),
+        url('LamaSans-SemiBold.woff') format('woff'),
+        url('LamaSans-SemiBold.ttf') format('truetype'),
+        url('LamaSans-SemiBold.svg#LamaSans-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
