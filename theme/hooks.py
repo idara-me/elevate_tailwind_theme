@@ -8,6 +8,14 @@ app_license = "mit"
 
 # Includes in <head>
 # ------------------
+app_logo_url = "/assets/theme/img/logo.svg"
+
+website_context = {
+    "favicon": "/assets/theme/img/favicon.png",
+    "splash_image": "/assets/theme/img/logo.svg",
+}
+
+
 app_include_css = [
                     "/assets/theme/css/style.css",
                     "/assets/theme/css/loginstyle.css",

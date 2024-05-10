@@ -427,12 +427,13 @@ async function getpages(all_pages){
                 args: { page: page },
                 freeze: true
             });
-			/* let cards = sr.message.cards;
+			let cards = sr.message.cards;
 			page.links = cards;
-            setPageLinks(sr.message.cards, page); */
-			let shortcuts = sr.message.shortcuts;
-			page.shortcuts = shortcuts;
-            setPageLinks(sr.message.shortcuts, page);
+            setPageLinks(sr.message.cards, page);
+            
+                // let shortcuts = sr.message.shortcuts;
+                // page.shortcuts = shortcuts;
+                // setPageLinks(sr.message.shortcuts, page);
 
             resolve(); // Resolve the promise after async operations are done
         });
@@ -733,37 +734,50 @@ function sidebar_item_container(item) {
             }
         } 
         if (subitems.length > 0 || shortcuts.length > 0) {
-            subitems.forEach((dmenu) => {
-                const opts = {
-                    name: dmenu.link_to,
-                    type: dmenu.type,
-                    doc_view: dmenu.doc_view,
-                    doctype: dmenu.doctype,
-                    is_query_report: 0
-                };
+            subitems.forEach((m_menu) => {
+                let submenu_level_1_active = ''
+                let submenu_level_2 = ''
+                let is_expanded = false;
+
+                m_menu.links.forEach((dmenu) => {
+                    const opts = {
+                        name: dmenu.link_to,
+                        type: dmenu.link_type,
+                        is_query_report: dmenu.is_query_report
+                    };
 
 
-                let route = frappe.utils.generate_route(opts);
-                var currentURL = window.location.href;
-                var domainWithPort = window.location.host;
-                let resultArray = currentURL.split(domainWithPort);
-                resulturl = resultArray[1].replace(/%20/g, " ")
-                resulturl = resulturl.split("?");
-                if (resulturl[0] == route) {
-                    activepage = "active";
-                    submenuactive = 'show active';
-                }
-                if (dmenu.type == 'URL') {
-                    route = dmenu.url;
-                }
+                    let route = frappe.utils.generate_route(opts);
+                    var currentURL = window.location.href;
+                    var domainWithPort = window.location.host;
+                    let resultArray = currentURL.split(domainWithPort);
+                    resulturl = resultArray[1].replace(/%20/g, " ")
+                    resulturl = resulturl.split("?");
+                    if (resulturl[0] == route) {
+                        activepage = "active";
+                        submenuactive = 'show active';
+                        submenu_level_1_active = 'show active';
+                        is_expanded = true;
+                    }
+                    
+                    if (dmenu.link_to == this.get_page_to_show_active()) {
+                        activepage = "active";
+                    } else {
+                        activepage = '';
+                    }
 
-                if (dmenu.link_to == this.get_page_to_show_active()) {
-                    activepage = "active";
-                } else {
-                    activepage = '';
-                }
+                    submenu_level_2 += `<li><a class="ms-link desk-sidebar-item standard-sidebar-item ${activepage}" 
+                    onclick="setactivepage('${__(item.title)}');openpage(this,event)" 
+                    data-current-page="${__(item.title)}"    href="${route}">${dmenu.label}</a></li>`;
+                });
 
-                submenuitems += `<li><a class="ms-link desk-sidebar-item standard-sidebar-item ${activepage}" onclick="setactivepage('${__(item.title)}');openpage(this,event)" data-current-page="${__(item.title)}"    href="${route}">${dmenu.label}</a></li>`;
+                let submenu_level_1 = `<li class="sidebar-item">
+                <a class="sidebar-link has-arrow" style="white-space: unset;" href="#" aria-expanded="${is_expanded}" data-bs-parent="#accordionmainmenu" data-bs-toggle="collapse" data-bs-target="#${m_menu.name}">
+                  <span class="hide-menu">${m_menu.label}</span>
+                </a>
+                <ul aria-expanded="false" class="collapse two-level ${submenu_level_1_active}" id="${m_menu.name}"> ${submenu_level_2} </ul></li>`
+
+                submenuitems += submenu_level_1
             });
             shortcuts.forEach((dmenu) => {
 

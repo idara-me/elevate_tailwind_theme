@@ -1,4 +1,6 @@
-(()=>{frappe.templates.navbar=`<header class="page-header topbar sticky-top" role="navigation">
+(() => {
+  // frappe-html:/home/nextash/bench-15/apps/theme/theme/public/js/frappe/ui/toolbar/navbar.html
+  frappe.templates["navbar"] = `<header class="page-header topbar sticky-top" role="navigation">
     <div class="with-vertical">
         <nav class="navbar navbar-expand-lg p-0">
             <ul class="navbar-nav">
@@ -66,58 +68,7 @@
                         <div class="notification-list-body content">
                             <div class="panel-notifications"></div>
                             <div class="panel-events"></div>
-                        </div>
-                       <!--  <div class="d-flex justify-content-between align-items-center notification_header">
-                            <p >Notifications</p>
-                            <p class="counter">5 new</p>
-                        </div> -->
-                        <!-- <div class="content">
-                            <div class="d-flex gap-2 align-items-center inner_content">
-                                <div class="profile_img">
-                                    <img src="/assets/theme/img/user-4.jpg" alt="">
-                                </div>
-                                <div>
-                                    <p class="m-0 title">Roman Joined the Team!</p>
-                                    <p class="m-0">Congratulate him</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mt-2 gap-2 align-items-center inner_content">
-                                <div class="profile_img">
-                                    <img src="/assets/theme/img/user-4.jpg" alt="">
-                                </div>
-                                <div>
-                                    <p class="m-0 title">Roman Joined the Team!</p>
-                                    <p class="m-0">Congratulate him</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mt-2 gap-2 align-items-center inner_content">
-                                <div class="profile_img">
-                                    <img src="/assets/theme/img/user-4.jpg" alt="">
-                                </div>
-                                <div>
-                                    <p class="m-0 title">Roman Joined the Team!</p>
-                                    <p class="m-0">Congratulate him</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mt-2 gap-2 align-items-center inner_content">
-                                <div class="profile_img">
-                                    <img src="/assets/theme/img/user-4.jpg" alt="">
-                                </div>
-                                <div>
-                                    <p class="m-0 title">Roman Joined the Team!</p>
-                                    <p class="m-0">Congratulate him</p>
-                                </div>
-                            </div>
-                            <div class="d-flex mt-2 gap-2 align-items-center inner_content">
-                                <div class="profile_img">
-                                    <img src="/assets/theme/img/user-4.jpg" alt="">
-                                </div>
-                                <div>
-                                    <p class="m-0 title">Roman Joined the Team!</p>
-                                    <p class="m-0">Congratulate him</p>
-                                </div>
-                            </div>
-                        </div> -->
+                        </div> 
                         <div class="mt-2 text-center"> 
                             <a class="btn bg-primary py-1 text-white">see all notification</a>
                         </div>
@@ -165,7 +116,7 @@
                                 <li><a class="dropdown-item" href="/update-password"><span class="password"><i class="fa-solid fa-key"></i></span>Update Password</a></li>
                                 <li> <a class="dropdown-item" onclick="return frappe.ui.toolbar.clear_cache()"><span class="reload"><i class="fa-solid fa-rotate-right"></i></span> Reload</a></li>
                              
-                                <li><a class="btn bg-primary py-1 text-white w-100" href="login"
+                                <li><a class="btn bg-primary py-1 text-white w-100" href="/login#login"
                                     onclick="return frappe.app.logout()" role="button">Logout</a></li>
                             </ul>
                         </div>
@@ -176,7 +127,10 @@
         </div>
         </nav>
     </div>
-</header>`;frappe.templates.page=`<div class="page-head flex">
+</header>`;
+
+  // frappe-html:/home/nextash/bench-15/apps/theme/theme/public/js/frappe/ui/page.html
+  frappe.templates["page"] = `<div class="page-head flex">
     <div class="container">
         <div class="row flex align-center page-head-content justify-between">
             <div class="col-md-4 col-sm-6 col-xs-8 page-title">
@@ -261,5 +215,6 @@
             <div class="clearfix"></div>
         </div>
     </div>
-</div>`;})();
-//# sourceMappingURL=custom_desk.bundle.DP22MUHQ.js.map
+</div>`;
+})();
+//# sourceMappingURL=custom_desk.bundle.Y67ML343.js.map

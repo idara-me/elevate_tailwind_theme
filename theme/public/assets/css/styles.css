@@ -21778,7 +21778,7 @@ html[dir=rtl] body {
   direction: rtl;
 }
 @media (min-width: 1300px) {
-  html[dir=rtl][data-layout=vertical] #main-wrapper .page-wrapper {
+  html[dir=rtl][data-layout=vertical] #main-wrapper > .page-wrapper {
     margin-right: 270px;
     margin-left: 0;
   }
