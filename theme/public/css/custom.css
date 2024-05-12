@@ -13,12 +13,21 @@
   left: -120%;
 }
 
+[dir="ltr"] .menu-list li .has-arrow:hover::before {
+  left: 0;
+}
+
 html[dir="rtl"] .input-group .form-control:not(:first-child),
 html[dir="rtl"] .input-group .form-control:not(:last-child) {
   border-radius: var(--bs-border-radius-lg) !important;
 }
 
-.navbar .nav-item.notification_ {
+
+html[dir="rtl"] .navbar .nav-item {
+  margin: unset;
+}
+
+html[dir="rtl"] .navbar .nav-item.notification_ {
   margin-right: var(--margin-md);
 }
 
@@ -27,10 +36,42 @@ html[dir="rtl"] .ce-header .h4:after {
     right: 13px;
 }
 
+html[dir="rtl"] .search-nav-item {
+  margin-right: auto;
+}
+
+
 .like-disabled-input {
   min-height: calc(1.5em + 1rem + calc(var(--bs-border-width)* 2));
 }
 
 :root {
   --disabled-input-padding: 8px 8px;
+}
+
+.notifications_popup {
+  width: 350px;
+}
+
+.page-header .header-menu .dropdown-menu.notifications_popup .notification_header {
+  padding: 0;
+}
+
+.mark-all-read {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+.notifications-list .notification-list-body {
+  margin: 0 10px;
+}
+
+.btn:not(.btn-md):not(.btn-lg), 
+div#driver-popover-item .driver-popover-footer button:not(.btn-md):not(.btn-lg) {
+  padding: 5px 20px 3px;
+}
+
+html[dir="rtl"] .dropdown-menu .dropdown_list li a span {
+  margin-right: 0;
+  margin-left: 15px;
 }

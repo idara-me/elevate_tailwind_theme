@@ -22,11 +22,8 @@
                 </svg> -->
             </a> 
             <ul class="header-menu flex-grow-1"> 
-                <li class="d-none">
-                    <!-- <ul class="nav navbar-nav d-none d-sm-flex" id="navbar-breadcrumbs"></ul> -->
-                </li>
                 <li>
-                    <div class="">
+                    <div class="search-nav-item">
                         <form class="form-inline nav-form nav-link position-relative shadow-none" role="search" onsubmit="return false;">
                             {% if (frappe.boot.read_only) { %}
                             <span class="indicator-pill yellow no-indicator-dot" title="{%= __(" Your site is getting
