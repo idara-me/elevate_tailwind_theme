@@ -1,5 +1,5 @@
 (() => {
-  // frappe-html:/home/nextash/bench-15/apps/theme/theme/public/js/frappe/ui/toolbar/navbar.html
+  // frappe-html:/home/fasi/bench-15/apps/theme/theme/public/js/frappe/ui/toolbar/navbar.html
   frappe.templates["navbar"] = `<header class="page-header topbar sticky-top" role="navigation">
     <div class="with-vertical">
         <nav class="navbar navbar-expand-lg p-0">
@@ -129,7 +129,7 @@
     </div>
 </header>`;
 
-  // frappe-html:/home/nextash/bench-15/apps/theme/theme/public/js/frappe/ui/page.html
+  // frappe-html:/home/fasi/bench-15/apps/theme/theme/public/js/frappe/ui/page.html
   frappe.templates["page"] = `<div class="page-head flex">
     <div class="container">
         <div class="row flex align-center page-head-content justify-between">
@@ -217,4 +217,4 @@
     </div>
 </div>`;
 })();
-//# sourceMappingURL=custom_desk.bundle.Y67ML343.js.map
+//# sourceMappingURL=custom_desk.bundle.BIZWFMMD.js.map

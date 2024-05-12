@@ -8,7 +8,7 @@ app_license = "mit"
 
 # Includes in <head>
 # ------------------
-app_logo_url = "/assets/theme/img/logo.svg"
+app_logo_url = "/assets/theme/img/favicon.png"
 
 website_context = {
     "favicon": "/assets/theme/img/favicon.png",
@@ -23,7 +23,8 @@ app_include_css = [
                     "/assets/theme/assets/css/styles.css",
                     "/assets/theme/assets/css/loginstyle.css",
                     "/assets/theme/assets/libs/jvectormap/jquery-jvectormap.css",
-                    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+                    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css",
+                    "/assets/theme/css/custom.css"
                 ]
 app_include_js = [
                 

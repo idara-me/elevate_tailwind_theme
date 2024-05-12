@@ -1,0 +1,36 @@
+[dir="rtl"] .menu-list li .has-arrow::before {
+  left: unset;
+  right: -100%;
+  border-radius: 24px 0px 0px 24px;
+  width: 100%;
+}
+
+[dir="rtl"] .menu-list li .has-arrow:hover::before {
+  right: 0%;
+}
+
+[dir="ltr"] .menu-list li .has-arrow::before {
+  left: -120%;
+}
+
+html[dir="rtl"] .input-group .form-control:not(:first-child),
+html[dir="rtl"] .input-group .form-control:not(:last-child) {
+  border-radius: var(--bs-border-radius-lg) !important;
+}
+
+.navbar .nav-item.notification_ {
+  margin-right: var(--margin-md);
+}
+
+html[dir="rtl"] .ce-header .h4:after {
+    left: unset;
+    right: 13px;
+}
+
+.like-disabled-input {
+  min-height: calc(1.5em + 1rem + calc(var(--bs-border-width)* 2));
+}
+
+:root {
+  --disabled-input-padding: 8px 8px;
+}
