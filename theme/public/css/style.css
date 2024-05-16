@@ -25514,6 +25514,11 @@ pre[class*=language-] {
     .show-sidebar .sidebar{
         left: 0%;
     }
+
+    [dir=rtl] .show-sidebar .sidebar{
+        right: 0%;
+    }
+
     .show-sidebar  .fixed-profile{
         margin-top: 32px !important;
     }

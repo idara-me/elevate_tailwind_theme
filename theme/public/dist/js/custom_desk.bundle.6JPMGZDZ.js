@@ -1,6 +1,4 @@
-(() => {
-  // frappe-html:/home/fasi/bench-15/apps/theme/theme/public/js/frappe/ui/toolbar/navbar.html
-  frappe.templates["navbar"] = `<header class="page-header topbar sticky-top" role="navigation">
+(()=>{frappe.templates.navbar=`<header class="page-header topbar sticky-top" role="navigation">
     <div class="with-vertical">
         <nav class="navbar navbar-expand-lg p-0">
             <ul class="navbar-nav">
@@ -24,11 +22,8 @@
                 </svg> -->
             </a> 
             <ul class="header-menu flex-grow-1"> 
-                <li class="d-none">
-                    <!-- <ul class="nav navbar-nav d-none d-sm-flex" id="navbar-breadcrumbs"></ul> -->
-                </li>
                 <li>
-                    <div class="">
+                    <div class="search-nav-item">
                         <form class="form-inline nav-form nav-link position-relative shadow-none" role="search" onsubmit="return false;">
                             {% if (frappe.boot.read_only) { %}
                             <span class="indicator-pill yellow no-indicator-dot" title="{%= __(" Your site is getting
@@ -127,10 +122,7 @@
         </div>
         </nav>
     </div>
-</header>`;
-
-  // frappe-html:/home/fasi/bench-15/apps/theme/theme/public/js/frappe/ui/page.html
-  frappe.templates["page"] = `<div class="page-head flex">
+</header>`;frappe.templates.page=`<div class="page-head flex">
     <div class="container">
         <div class="row flex align-center page-head-content justify-between">
             <div class="col-md-4 col-sm-6 col-xs-8 page-title">
@@ -215,6 +207,5 @@
             <div class="clearfix"></div>
         </div>
     </div>
-</div>`;
-})();
-//# sourceMappingURL=custom_desk.bundle.BIZWFMMD.js.map
+</div>`;})();
+//# sourceMappingURL=custom_desk.bundle.6JPMGZDZ.js.map

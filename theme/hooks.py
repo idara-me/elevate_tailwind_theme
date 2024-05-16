@@ -72,7 +72,8 @@ web_include_css = [
                     "/assets/theme/css/style.css",
                     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css",
                     "/assets/theme/dist/css/style.css", 
-                    "/assets/theme/css/new-style.css" 
+                    "/assets/theme/css/new-style.css" ,
+                    "/assets/theme/css/custom_web.css"
                 ]
 web_include_js = [ "website_script.js",
                     "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
