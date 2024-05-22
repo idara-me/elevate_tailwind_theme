@@ -1,4 +1,6 @@
-(()=>{frappe.templates.navbar=`<header class="page-header topbar sticky-top" role="navigation">
+(() => {
+  // frappe-html:/home/nextash/bench-15/apps/theme/theme/public/js/frappe/ui/toolbar/navbar.html
+  frappe.templates["navbar"] = `<header class="page-header topbar sticky-top" role="navigation">
     <div class="with-vertical">
         <nav class="navbar navbar-expand-lg p-0">
             <ul class="navbar-nav">
@@ -122,7 +124,10 @@
         </div>
         </nav>
     </div>
-</header>`;frappe.templates.page=`<div class="page-head flex">
+</header>`;
+
+  // frappe-html:/home/nextash/bench-15/apps/theme/theme/public/js/frappe/ui/page.html
+  frappe.templates["page"] = `<div class="page-head flex">
     <div class="container">
         <div class="row flex align-center page-head-content justify-between">
             <div class="col-md-4 col-sm-6 col-xs-8 page-title">
@@ -207,5 +212,6 @@
             <div class="clearfix"></div>
         </div>
     </div>
-</div>`;})();
-//# sourceMappingURL=custom_desk.bundle.6JPMGZDZ.js.map
+</div>`;
+})();
+//# sourceMappingURL=custom_desk.bundle.A6TW6AFF.js.map
