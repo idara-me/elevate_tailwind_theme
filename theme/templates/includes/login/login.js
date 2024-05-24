@@ -8,9 +8,6 @@ window.login = {};
 window.verify = {};
 
 login.bind_events = function () {
-
-
-
 	$(".form-login").on("submit", function (event) {
 		event.preventDefault();
 		var args = {};
