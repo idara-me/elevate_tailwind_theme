@@ -2546,8 +2546,6 @@ pre[class*=language-] {
 	    background: linear-gradient(145deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-	font-family: "Bree Serif",sans-serif;   
-	/* font-family: 'Acumin Pro Bold'; */
 }
 
 .table-ui{

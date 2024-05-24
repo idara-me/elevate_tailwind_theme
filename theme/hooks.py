@@ -36,6 +36,7 @@ app_include_js = [
                     "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js",
                     
                     "/assets/theme/js/custom.js",
+                    "/assets/theme/js/custom_idara.js",
                     # "/assets/theme/js/apexcharts.bundle.js" 
                     
                     # "/assets/theme/assets/js/vendor.min.js",
