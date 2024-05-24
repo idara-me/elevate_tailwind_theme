@@ -859,7 +859,7 @@ function sidebar_item_container(item) {
             }
             return $(`
         <li class="collapsed sidebar-item">
-            <a class="m-link ${activepage} sidebar-link success-hover-bg" onclick="openpage(this,event)"  href="/app/${item.public
+            <a class="m-link ${activepage} sidebar-link success-hover-bg has-arrow no-arrow" onclick="openpage(this,event)"  href="/app/${item.public
                     ? frappe.router.slug(item.title)
                     : "private/" + frappe.router.slug(item.title)
                 }" aria-expanded="true">

@@ -75,3 +75,11 @@ html[dir="rtl"] .dropdown-menu .dropdown_list li a span {
   margin-right: 0;
   margin-left: 15px;
 }
+
+.no-arrow::after {
+  display: none !important;
+}
+
+.ps-1 {
+  font-weight: 700;
+}
