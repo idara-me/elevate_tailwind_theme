@@ -30805,3 +30805,8 @@ table.dataTable.dtr-inline.collapsed.d-row>tbody>tr[role=row]>th:first-child::be
 .sidebar .menu-list>li ul.two-level {
     padding-left: 10px;
 }
+
+html[dir="rtl"] body {
+  text-align: right;
+  direction: rtl;
+}
